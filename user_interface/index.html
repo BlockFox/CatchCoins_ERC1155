@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Catch Coins - Start</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src="./web3.min.js"> </script>
+    <script src="./phaser.min.js"> </script>
+    <script src="./abi.js"> </script>
+    <script src="./eth.js"> </script>
+  </head>
+
+  <body>
+    <!-- page header -->
+    <div class="jumbotron jumbotron-fluid text-center">
+      <div class="container">
+        <h1>PUMP YOUR BAG</h1>
+        <p>Catch as many Bitcoins as you can!</p>
+      </div>
+    </div>
+
+    <!-- Assets listet in colums -->
+    <div class="container">
+      <h2>Your Assets and Marketplace</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <h4>Pump Talisman</h4>
+          <p>Your Balance: <span id="balance_talisman">0</span> </p>
+          <button type="button" class="btn btn-default" onclick="buyTokens(1)"> Buy with 0.0001 eth</button>
+          <!-- TODO: implement sell Function
+          <button type="button" class="btn btn-default" onclick="sellTokens(1)"> Sell for 0.0001 eth</button>
+          -->
+        </div>
+        <div class="col-sm-4">
+          <h4>Super Boost</h4>
+          <p>Your Balance: <span id="balance_super_boost">0</span></p>
+          <button type="button" class="btn btn-default" onclick="buyTokens(2)"> Buy with 0.0002 eth</button>
+          <!-- TODO: implement sell Function
+          <button type="button" class="btn btn-default" onclick="sellTokens(2)"> Sell for 0.0002 eth</button>
+          -->
+        </div>
+        <div class="col-sm-4">
+          <h4>Time Wrap Cape</h4>
+          <p>Your Balance: <span id="balance_time_wrap">0</span></p>
+          <button type="button" class="btn btn-default" onclick="buyTokens(3)"> Buy with 0.0003 eth</button>
+          <!-- TODO: implement sell Function
+          <button type="button" class="btn btn-default" onclick="sellTokens(3)"> Sell for 0.0003 eth</button>
+          -->
+        </div>
+      </div>
+    </div>
+
+      <!-- Button to start Game -->
+    <div class="container text-center">
+      <h2>Start the game!!</h2>
+      <button type="button"
+              class="btn btn-primary btn-lg"
+              onclick="startGame()"> Start Game</button>
+    </div>
+
+
+  <div class="container btn-lg" >
+    <h2>Game Controls</h2>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Key</th>
+          <th>Function</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Right Arrow</td>
+          <td>Move right</td>
+
+        </tr>
+        <tr>
+          <td>Left Arrow</td>
+          <td>Move left</td>
+        </tr>
+        <tr>
+          <td>Space</td>
+          <td>Jump</td>
+        </tr>
+        <tr>
+          <td>Shift</td>
+          <td>run with Super Boost</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  </body>
+</html>
