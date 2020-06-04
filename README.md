@@ -1,10 +1,10 @@
-#Catch Coins
+# Catch Coins
 A Game where you must catch as many coins as you can. In this version you can purchase some collectibles like
 - Pump Talisman: the more you have the more coins fall from the sky
 - Super Boost: make your character faster
 - Time Wrap Cape: reduce speed of timer
 
-##Acknowledgement
+## Acknowledgement
 Many thanks to Ivan and Filip for the great course "Ethereum Game Programming" in your academy on "https://academy.ivanontech.com/"
 
 ## Requirements
@@ -28,7 +28,7 @@ For unit testing truffle-assertions can be very helpful
     npm install truffle-assertions
     ```
 
-##How to Play
+## How to Play
 1. Download the whole project folder. The smart contracts are deployed on Ropsten NW but you can deploy it on your own with Truffle.
 
 2. Run a local python web server in the user_interface folder with console
@@ -41,6 +41,6 @@ For unit testing truffle-assertions can be very helpful
 
 4. enjoy ;)
 
-##Further steps
+## Further steps
 - the ability to sell coins
 - the ability to update Contract (proxy contract)
