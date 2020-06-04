@@ -1,0 +1,5 @@
+smart_contracts/node_modules/
+smart_contracts/.idea/
+smart_contracts/build/
+smart_contracts/truffle-config.js
+smart_contracts/.secret
